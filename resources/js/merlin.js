@@ -45,9 +45,9 @@
   /******/ /******/ __webpack_require__.d = function (exports, name, getter) {
     /******/ if (!__webpack_require__.o(exports, name)) {
       /******/ Object.defineProperty(exports, name, {
-    enumerable: true,
-    get: getter,
-  });
+        enumerable: true,
+        get: getter,
+      });
       /******/
     }
     /******/
@@ -56,8 +56,8 @@
   /******/ /******/ __webpack_require__.r = function (exports) {
     /******/ if (typeof Symbol !== "undefined" && Symbol.toStringTag) {
       /******/ Object.defineProperty(exports, Symbol.toStringTag, {
-    value: "Module",
-  });
+        value: "Module",
+      });
       /******/
     }
     /******/ Object.defineProperty(exports, "__esModule", { value: true });
@@ -80,9 +80,9 @@
     /******/ var ns = Object.create(null);
     /******/ __webpack_require__.r(ns);
     /******/ Object.defineProperty(ns, "default", {
-        enumerable: true,
-        value: value,
-      });
+      enumerable: true,
+      value: value,
+    });
     /******/ if (mode & 2 && typeof value != "string")
       for (var key in value)
         __webpack_require__.d(
@@ -100,11 +100,11 @@
     /******/ var getter =
       module && module.__esModule
         ? /******/ function getDefault() {
-          return module["default"];
-        }
+            return module["default"];
+          }
         : /******/ function getModuleExports() {
-          return module;
-        };
+            return module;
+          };
     /******/ __webpack_require__.d(getter, "a", getter);
     /******/ return getter;
     /******/
@@ -121,15 +121,15 @@
   /******/
 })(
   /************************************************************************/
-  /******/[
+  /******/ [
     /* 0 */
     /***/ function (module, exports) {
       function _interopRequireDefault(obj) {
         return obj && obj.__esModule
           ? obj
           : {
-            default: obj,
-          };
+              default: obj,
+            };
       }
 
       module.exports = _interopRequireDefault;
@@ -436,14 +436,14 @@
 
       Webflow.validClick = touch
         ? function (clickTarget) {
-          return (
-            clickTarget === touchTarget ||
-            $.contains(clickTarget, touchTarget)
-          );
-        }
+            return (
+              clickTarget === touchTarget ||
+              $.contains(clickTarget, touchTarget)
+            );
+          }
         : function () {
-          return true;
-        };
+            return true;
+          };
       /**
        * Webflow.resize, Webflow.scroll - throttled event proxies
        */
@@ -510,7 +510,7 @@
 
       if (Webflow.env()) {
         // Ignore redirects inside a Webflow design/edit environment
-        Webflow.location = function () { };
+        Webflow.location = function () {};
       } // Webflow.ready - Call primary and secondary handlers
 
       Webflow.ready = function () {
@@ -923,16 +923,16 @@
 
       module.exports = DESCRIPTORS
         ? function (object, key, value) {
-          return definePropertyModule.f(
-            object,
-            key,
-            createPropertyDescriptor(1, value)
-          );
-        }
+            return definePropertyModule.f(
+              object,
+              key,
+              createPropertyDescriptor(1, value)
+            );
+          }
         : function (object, key, value) {
-          object[key] = value;
-          return object;
-        };
+            object[key] = value;
+            return object;
+          };
 
       /***/
     },
@@ -947,16 +947,16 @@
       var _typeof =
         typeof Symbol === "function" && typeof Symbol.iterator === "symbol"
           ? function (obj) {
-            return typeof obj;
-          }
+              return typeof obj;
+            }
           : function (obj) {
-            return obj &&
-              typeof Symbol === "function" &&
-              obj.constructor === Symbol &&
-              obj !== Symbol.prototype
-              ? "symbol"
-              : typeof obj;
-          };
+              return obj &&
+                typeof Symbol === "function" &&
+                obj.constructor === Symbol &&
+                obj !== Symbol.prototype
+                ? "symbol"
+                : typeof obj;
+            };
 
       exports.clone = clone;
       exports.addLast = addLast;
@@ -1024,8 +1024,8 @@
 
         for (
           var _len = arguments.length,
-          rest = Array(_len > 3 ? _len - 3 : 0),
-          _key = 3;
+            rest = Array(_len > 3 ? _len - 3 : 0),
+            _key = 3;
           _key < _len;
           _key++
         ) {
@@ -1339,8 +1339,8 @@
             isObject(obj) && isObject(obj[key])
               ? obj[key]
               : typeof path[idx + 1] === "number"
-                ? []
-                : {};
+              ? []
+              : {};
           newValue = doSetIn(nestedObj, path, val, idx + 1);
         }
         return set(obj, key, newValue);
@@ -1443,8 +1443,8 @@
       function merge(a, b, c, d, e, f) {
         for (
           var _len2 = arguments.length,
-          rest = Array(_len2 > 6 ? _len2 - 6 : 0),
-          _key2 = 6;
+            rest = Array(_len2 > 6 ? _len2 - 6 : 0),
+            _key2 = 6;
           _key2 < _len2;
           _key2++
         ) {
@@ -1453,9 +1453,9 @@
 
         return rest.length
           ? doMerge.call.apply(
-            doMerge,
-            [null, false, false, a, b, c, d, e, f].concat(rest)
-          )
+              doMerge,
+              [null, false, false, a, b, c, d, e, f].concat(rest)
+            )
           : doMerge(false, false, a, b, c, d, e, f);
       }
 
@@ -1498,8 +1498,8 @@
       function mergeDeep(a, b, c, d, e, f) {
         for (
           var _len3 = arguments.length,
-          rest = Array(_len3 > 6 ? _len3 - 6 : 0),
-          _key3 = 6;
+            rest = Array(_len3 > 6 ? _len3 - 6 : 0),
+            _key3 = 6;
           _key3 < _len3;
           _key3++
         ) {
@@ -1508,9 +1508,9 @@
 
         return rest.length
           ? doMerge.call.apply(
-            doMerge,
-            [null, false, true, a, b, c, d, e, f].concat(rest)
-          )
+              doMerge,
+              [null, false, true, a, b, c, d, e, f].concat(rest)
+            )
           : doMerge(false, true, a, b, c, d, e, f);
       }
 
@@ -1543,8 +1543,8 @@
 
         for (
           var _len4 = arguments.length,
-          rest = Array(_len4 > 7 ? _len4 - 7 : 0),
-          _key4 = 7;
+            rest = Array(_len4 > 7 ? _len4 - 7 : 0),
+            _key4 = 7;
           _key4 < _len4;
           _key4++
         ) {
@@ -1623,8 +1623,8 @@
       function addDefaults(a, b, c, d, e, f) {
         for (
           var _len5 = arguments.length,
-          rest = Array(_len5 > 6 ? _len5 - 6 : 0),
-          _key5 = 6;
+            rest = Array(_len5 > 6 ? _len5 - 6 : 0),
+            _key5 = 6;
           _key5 < _len5;
           _key5++
         ) {
@@ -1633,9 +1633,9 @@
 
         return rest.length
           ? doMerge.call.apply(
-            doMerge,
-            [null, true, false, a, b, c, d, e, f].concat(rest)
-          )
+              doMerge,
+              [null, true, false, a, b, c, d, e, f].concat(rest)
+            )
           : doMerge(true, false, a, b, c, d, e, f);
       }
 
@@ -2092,12 +2092,12 @@
       )
         ? baseIsArguments
         : function (value) {
-          return (
-            isObjectLike(value) &&
-            hasOwnProperty.call(value, "callee") &&
-            !propertyIsEnumerable.call(value, "callee")
-          );
-        };
+            return (
+              isObjectLike(value) &&
+              hasOwnProperty.call(value, "callee") &&
+              !propertyIsEnumerable.call(value, "callee")
+            );
+          };
 
       module.exports = isArguments;
 
@@ -2191,20 +2191,20 @@
       exports.f = DESCRIPTORS
         ? nativeDefineProperty
         : function defineProperty(O, P, Attributes) {
-          anObject(O);
-          P = toPrimitive(P, true);
-          anObject(Attributes);
-          if (IE8_DOM_DEFINE)
-            try {
-              return nativeDefineProperty(O, P, Attributes);
-            } catch (error) {
-              /* empty */
-            }
-          if ("get" in Attributes || "set" in Attributes)
-            throw TypeError("Accessors not supported");
-          if ("value" in Attributes) O[P] = Attributes.value;
-          return O;
-        };
+            anObject(O);
+            P = toPrimitive(P, true);
+            anObject(Attributes);
+            if (IE8_DOM_DEFINE)
+              try {
+                return nativeDefineProperty(O, P, Attributes);
+              } catch (error) {
+                /* empty */
+              }
+            if ("get" in Attributes || "set" in Attributes)
+              throw TypeError("Accessors not supported");
+            if ("value" in Attributes) O[P] = Attributes.value;
+            return O;
+          };
 
       /***/
     },
@@ -2428,14 +2428,14 @@
           ) {
             throw new Error(
               "Actions must be plain objects. " +
-              "Use custom middleware for async actions."
+                "Use custom middleware for async actions."
             );
           }
 
           if (typeof action.type === "undefined") {
             throw new Error(
               'Actions may not have an undefined "type" property. ' +
-              "Have you misspelled a constant?"
+                "Have you misspelled a constant?"
             );
           }
 
@@ -2624,11 +2624,11 @@
       exports.withBrowser = withBrowser;
       var ELEMENT_MATCHES = withBrowser(function () {
         return (0,
-          _find[
+        _find[
           "default"
-          ])(["matches", "matchesSelector", "mozMatchesSelector", "msMatchesSelector", "oMatchesSelector", "webkitMatchesSelector"], function (key) {
-            return key in Element.prototype;
-          });
+        ])(["matches", "matchesSelector", "mozMatchesSelector", "msMatchesSelector", "oMatchesSelector", "webkitMatchesSelector"], function (key) {
+          return key in Element.prototype;
+        });
       });
       exports.ELEMENT_MATCHES = ELEMENT_MATCHES;
       var FLEX_PREFIXED = withBrowser(function () {
@@ -3297,8 +3297,8 @@
         return isBinary || reIsOctal.test(value)
           ? freeParseInt(value.slice(2), isBinary ? 2 : 8)
           : reIsBadHex.test(value)
-            ? NAN
-            : +value;
+          ? NAN
+          : +value;
       }
 
       module.exports = toNumber;
@@ -3734,16 +3734,16 @@
           );
         }
 
-        function f() { }
+        function f() {}
 
         function g(a, b) {
           j(
             "Type warning: Expected: [" +
-            a +
-            "] Got: [" +
-            (0, _typeof2["default"])(b) +
-            "] " +
-            b
+              a +
+              "] Got: [" +
+              (0, _typeof2["default"])(b) +
+              "] " +
+              b
           );
         }
 
@@ -3768,7 +3768,7 @@
         }
 
         function k(a) {
-          for (var b = -1, c = a ? a.length : 0, d = []; ++b < c;) {
+          for (var b = -1, c = a ? a.length : 0, d = []; ++b < c; ) {
             var e = a[b];
             e && d.push(e);
           }
@@ -3777,50 +3777,50 @@
         }
 
         var l = (function (a, b, c) {
-          function d(a) {
-            return "object" == (0, _typeof2["default"])(a);
-          }
-
-          function e(a) {
-            return "function" == typeof a;
-          }
-
-          function f() { }
-
-          function g(h, i) {
-            function j() {
-              var a = new k();
-              return e(a.init) && a.init.apply(a, arguments), a;
+            function d(a) {
+              return "object" == (0, _typeof2["default"])(a);
             }
 
-            function k() { }
+            function e(a) {
+              return "function" == typeof a;
+            }
 
-            i === c && ((i = h), (h = Object)), (j.Bare = k);
-            var l,
-              m = (f[a] = h[a]),
-              n = (k[a] = j[a] = new f());
-            return (
-              (n.constructor = j),
-              (j.mixin = function (b) {
-                return (k[a] = j[a] = g(j, b)[a]), j;
-              }),
-              (j.open = function (a) {
-                if (
-                  ((l = {}),
+            function f() {}
+
+            function g(h, i) {
+              function j() {
+                var a = new k();
+                return e(a.init) && a.init.apply(a, arguments), a;
+              }
+
+              function k() {}
+
+              i === c && ((i = h), (h = Object)), (j.Bare = k);
+              var l,
+                m = (f[a] = h[a]),
+                n = (k[a] = j[a] = new f());
+              return (
+                (n.constructor = j),
+                (j.mixin = function (b) {
+                  return (k[a] = j[a] = g(j, b)[a]), j;
+                }),
+                (j.open = function (a) {
+                  if (
+                    ((l = {}),
                     e(a) ? (l = a.call(j, n, m, j, h)) : d(a) && (l = a),
                     d(l))
-                )
-                  for (var c in l) {
-                    b.call(l, c) && (n[c] = l[c]);
-                  }
-                return e(n.init) || (n.init = h), j;
-              }),
-              j.open(i)
-            );
-          }
+                  )
+                    for (var c in l) {
+                      b.call(l, c) && (n[c] = l[c]);
+                    }
+                  return e(n.init) || (n.init = h), j;
+                }),
+                j.open(i)
+              );
+            }
 
-          return g;
-        })("prototype", {}.hasOwnProperty),
+            return g;
+          })("prototype", {}.hasOwnProperty),
           m = {
             ease: [
               "ease",
@@ -3830,7 +3830,7 @@
                 return (
                   b +
                   c *
-                  (-2.75 * f * e + 11 * e * e + -15.5 * f + 8 * e + 0.25 * a)
+                    (-2.75 * f * e + 11 * e * e + -15.5 * f + 8 * e + 0.25 * a)
                 );
               },
             ],
@@ -3850,7 +3850,7 @@
                 return (
                   b +
                   c *
-                  (0.3 * f * e + -1.6 * e * e + 2.2 * f + -1.8 * e + 1.9 * a)
+                    (0.3 * f * e + -1.6 * e * e + 2.2 * f + -1.8 * e + 1.9 * a)
                 );
               },
             ],
@@ -3986,10 +3986,10 @@
                 return 0 === a
                   ? b
                   : a === d
-                    ? b + c
-                    : (a /= d / 2) < 1
-                      ? (c / 2) * Math.pow(2, 10 * (a - 1)) + b
-                      : (c / 2) * (-Math.pow(2, -10 * --a) + 2) + b;
+                  ? b + c
+                  : (a /= d / 2) < 1
+                  ? (c / 2) * Math.pow(2, 10 * (a - 1)) + b
+                  : (c / 2) * (-Math.pow(2, -10 * --a) + 2) + b;
               },
             ],
             "ease-in-circ": [
@@ -4038,8 +4038,8 @@
                   (a /= d / 2) < 1
                     ? (c / 2) * a * a * (((e *= 1.525) + 1) * a - e) + b
                     : (c / 2) *
-                    ((a -= 2) * a * (((e *= 1.525) + 1) * a + e) + 2) +
-                    b
+                        ((a -= 2) * a * (((e *= 1.525) + 1) * a + e) + 2) +
+                      b
                 );
               },
             ],
@@ -4106,27 +4106,27 @@
         }
 
         var J = (b.frame = (function () {
-          var a =
-            p.requestAnimationFrame ||
-            p.webkitRequestAnimationFrame ||
-            p.mozRequestAnimationFrame ||
-            p.oRequestAnimationFrame ||
-            p.msRequestAnimationFrame;
-          return a && G.bind
-            ? a.bind(p)
-            : function (a) {
-              p.setTimeout(a, 16);
-            };
-        })()),
+            var a =
+              p.requestAnimationFrame ||
+              p.webkitRequestAnimationFrame ||
+              p.mozRequestAnimationFrame ||
+              p.oRequestAnimationFrame ||
+              p.msRequestAnimationFrame;
+            return a && G.bind
+              ? a.bind(p)
+              : function (a) {
+                  p.setTimeout(a, 16);
+                };
+          })()),
           K = (b.now = (function () {
             var a = p.performance,
               b = a && (a.now || a.webkitNow || a.msNow || a.mozNow);
             return b && G.bind
               ? b.bind(a)
               : Date.now ||
-              function () {
-                return +new Date();
-              };
+                  function () {
+                    return +new Date();
+                  };
           })()),
           L = l(function (b) {
             function d(a, b) {
@@ -4153,9 +4153,9 @@
                 if (
                   (b ||
                     (this.timer && this.timer.destroy(),
-                      (this.queue = []),
-                      (this.active = !1)),
-                    "number" == e && b)
+                    (this.queue = []),
+                    (this.active = !1)),
+                  "number" == e && b)
                 )
                   return (
                     (this.timer = new S({
@@ -4203,10 +4203,10 @@
                   ),
                     t.call(this),
                     f > 0 &&
-                    ((this.timer = new S({
-                      duration: f,
-                      context: this,
-                    })),
+                      ((this.timer = new S({
+                        duration: f,
+                        context: this,
+                      })),
                       (this.active = !0),
                       b && (this.timer.complete = h));
                   var g = this,
@@ -4226,33 +4226,33 @@
               (a = i(a, 0)),
                 this.active
                   ? this.queue.push({
-                    options: a,
-                  })
+                      options: a,
+                    })
                   : ((this.timer = new S({
-                    duration: a,
-                    context: this,
-                    complete: h,
-                  })),
+                      duration: a,
+                      context: this,
+                      complete: h,
+                    })),
                     (this.active = !0));
             }
 
             function g(a) {
               return this.active
                 ? (this.queue.push({
-                  options: a,
-                  args: arguments,
-                }),
+                    options: a,
+                    args: arguments,
+                  }),
                   void (this.timer.complete = h))
                 : j(
-                  "No active transition timer. Use start() or wait() before then()."
-                );
+                    "No active transition timer. Use start() or wait() before then()."
+                  );
             }
 
             function h() {
               if (
                 (this.timer && this.timer.destroy(),
-                  (this.active = !1),
-                  this.queue.length)
+                (this.active = !1),
+                this.queue.length)
               ) {
                 var a = this.queue.shift();
                 e.call(this, a.options, !0, a.args);
@@ -4267,9 +4267,9 @@
               "string" == typeof a
                 ? ((b = {}), (b[a] = 1))
                 : (b =
-                  "object" == (0, _typeof2["default"])(a) && null != a
-                    ? a
-                    : this.props),
+                    "object" == (0, _typeof2["default"])(a) && null != a
+                      ? a
+                      : this.props),
                 u.call(this, b, v),
                 t.call(this);
             }
@@ -4309,7 +4309,7 @@
 
               (c = c.join(",")),
                 this.style !== c &&
-                ((this.style = c), (this.el.style[G.transition.dom] = c));
+                  ((this.style = c), (this.el.style[G.transition.dom] = c));
             }
 
             function u(a, b, e) {
@@ -4374,12 +4374,12 @@
             (b.init = function (b) {
               if (
                 ((this.$el = a(b)),
-                  (this.el = this.$el[0]),
-                  (this.props = {}),
-                  (this.queue = []),
-                  (this.style = ""),
-                  (this.active = !1),
-                  U.keepInherited && !U.fallback)
+                (this.el = this.$el[0]),
+                (this.props = {}),
+                (this.queue = []),
+                (this.style = ""),
+                (this.active = !1),
+                U.keepInherited && !U.fallback)
               ) {
                 var c = W(this.el, "transition");
                 c && !z.test(c) && (this.upstream = c);
@@ -4480,8 +4480,8 @@
                 (this.active = !0),
                   (a = this.convert(a, this.type)),
                   this.auto &&
-                  ("auto" == this.el.style[this.name] &&
-                    (this.update(this.get()), this.redraw()),
+                    ("auto" == this.el.style[this.name] &&
+                      (this.update(this.get()), this.redraw()),
                     "auto" == a && (a = b.call(this))),
                   (this.nextStyle = a);
               }),
@@ -4491,7 +4491,7 @@
                   this.convert(this.get(), this.type);
                 (a = this.convert(a, this.type)),
                   this.auto &&
-                  ("auto" == c && (c = this.convert(this.get(), this.type)),
+                    ("auto" == c && (c = this.convert(this.get(), this.type)),
                     "auto" == a && (a = b.call(this))),
                   (this.tween = new R({
                     from: c,
@@ -4512,8 +4512,8 @@
               (a.stop = function () {
                 (this.active || this.nextStyle) &&
                   ((this.active = !1),
-                    (this.nextStyle = null),
-                    V(this.el, this.name, this.get()));
+                  (this.nextStyle = null),
+                  V(this.el, this.name, this.get()));
                 var a = this.tween;
                 a && a.context && a.destroy();
               }),
@@ -4603,10 +4603,10 @@
             (a.init = function () {
               b.init.apply(this, arguments),
                 this.current ||
-                ((this.current = {}),
+                  ((this.current = {}),
                   Z.perspective &&
-                  U.perspective &&
-                  ((this.current.perspective = U.perspective),
+                    U.perspective &&
+                    ((this.current.perspective = U.perspective),
                     V(this.el, this.name, this.style(this.current)),
                     this.redraw()));
             }),
@@ -4667,7 +4667,7 @@
                   c.call(this, a, function (a, c, e) {
                     (d[a] = c),
                       void 0 === this.current[a] &&
-                      ((b = 0),
+                        ((b = 0),
                         ~a.indexOf("scale") && (b = 1),
                         (this.current[a] = this.convert(b, e)));
                   }),
@@ -4686,7 +4686,7 @@
                 c,
                 d = n.length;
               if (d)
-                for (J(g), b = K(), a = d; a--;) {
+                for (J(g), b = K(), a = d; a--; ) {
                   (c = n[a]), c && c.render(b);
                 }
             }
@@ -4696,8 +4696,8 @@
                 d = a.inArray(b, n);
               d >= 0 &&
                 ((c = n.slice(d + 1)),
-                  (n.length = d),
-                  c.length && (n = n.concat(c)));
+                (n.length = d),
+                c.length && (n = n.concat(c)));
             }
 
             function j(a) {
@@ -4742,8 +4742,8 @@
               (b.play = function () {
                 this.active ||
                   (this.start || (this.start = K()),
-                    (this.active = !0),
-                    c(this));
+                  (this.active = !0),
+                  c(this));
               }),
               (b.stop = function () {
                 this.active && ((this.active = !1), i(this));
@@ -4827,17 +4827,17 @@
               for (b in a.values) {
                 (c = a.values[b]),
                   this.current[b] !== c &&
-                  this.tweens.push(
-                    new R({
-                      name: b,
-                      from: this.current[b],
-                      to: c,
-                      duration: a.duration,
-                      delay: a.delay,
-                      ease: a.ease,
-                      autoplay: !1,
-                    })
-                  );
+                    this.tweens.push(
+                      new R({
+                        name: b,
+                        from: this.current[b],
+                        to: c,
+                        duration: a.duration,
+                        delay: a.delay,
+                        ease: a.ease,
+                        autoplay: !1,
+                      })
+                    );
               }
 
               this.play();
@@ -4848,10 +4848,10 @@
                   d = this.tweens.length,
                   e = !1;
 
-                for (b = d; b--;) {
+                for (b = d; b--; ) {
                   (c = this.tweens[b]),
                     c.context &&
-                    (c.render(a), (this.current[c.name] = c.value), (e = !0));
+                      (c.render(a), (this.current[c.name] = c.value), (e = !0));
                 }
 
                 return e
@@ -4863,7 +4863,7 @@
                   var a,
                     c = this.tweens.length;
 
-                  for (a = c; a--;) {
+                  for (a = c; a--; ) {
                     this.tweens[a].destroy();
                   }
 
@@ -4955,22 +4955,22 @@
           Z = {};
         G.transform &&
           ((Y.transform = [Q]),
-            (Z = {
-              x: [w, "translateX"],
-              y: [w, "translateY"],
-              rotate: [x],
-              rotateX: [x],
-              rotateY: [x],
-              scale: [t],
-              scaleX: [t],
-              scaleY: [t],
-              skew: [x],
-              skewX: [x],
-              skewY: [x],
-            })),
+          (Z = {
+            x: [w, "translateX"],
+            y: [w, "translateY"],
+            rotate: [x],
+            rotateX: [x],
+            rotateY: [x],
+            scale: [t],
+            scaleX: [t],
+            scaleY: [t],
+            skew: [x],
+            skewX: [x],
+            skewY: [x],
+          })),
           G.transform &&
-          G.backface &&
-          ((Z.z = [w, "translateZ"]),
+            G.backface &&
+            ((Z.z = [w, "translateZ"]),
             (Z.rotateZ = [x]),
             (Z.scaleZ = [t]),
             (Z.perspective = [v]));
@@ -4998,20 +4998,20 @@
       exports.f = DESCRIPTORS
         ? nativeGetOwnPropertyDescriptor
         : function getOwnPropertyDescriptor(O, P) {
-          O = toIndexedObject(O);
-          P = toPrimitive(P, true);
-          if (IE8_DOM_DEFINE)
-            try {
-              return nativeGetOwnPropertyDescriptor(O, P);
-            } catch (error) {
-              /* empty */
-            }
-          if (has(O, P))
-            return createPropertyDescriptor(
-              !propertyIsEnumerableModule.f.call(O, P),
-              O[P]
-            );
-        };
+            O = toIndexedObject(O);
+            P = toPrimitive(P, true);
+            if (IE8_DOM_DEFINE)
+              try {
+                return nativeGetOwnPropertyDescriptor(O, P);
+              } catch (error) {
+                /* empty */
+              }
+            if (has(O, P))
+              return createPropertyDescriptor(
+                !propertyIsEnumerableModule.f.call(O, P),
+                O[P]
+              );
+          };
 
       /***/
     },
@@ -5147,7 +5147,7 @@
         return arguments.length < 2
           ? aFunction(path[namespace]) || aFunction(global[namespace])
           : (path[namespace] && path[namespace][method]) ||
-          (global[namespace] && global[namespace][method]);
+              (global[namespace] && global[namespace][method]);
       };
 
       /***/
@@ -5299,7 +5299,7 @@
        * This is a dummy function to check if the function name has been altered by minification.
        * If the function has been minified and NODE_ENV !== 'production', warn the user.
        */
-      function isCrushed() { }
+      function isCrushed() {}
 
       if (false) {
       }
@@ -5456,7 +5456,7 @@
         var reducerKeys = Object.keys(reducers);
         var argumentName =
           action &&
-            action.type ===
+          action.type ===
             _createStore__WEBPACK_IMPORTED_MODULE_0__["ActionTypes"].INIT
             ? "preloadedState argument passed to createStore"
             : "previous state received by the reducer";
@@ -5519,11 +5519,11 @@
           if (typeof initialState === "undefined") {
             throw new Error(
               'Reducer "' +
-              key +
-              '" returned undefined during initialization. ' +
-              "If the state passed to the reducer is undefined, you must " +
-              "explicitly return the initial state. The initial state may " +
-              "not be undefined."
+                key +
+                '" returned undefined during initialization. ' +
+                "If the state passed to the reducer is undefined, you must " +
+                "explicitly return the initial state. The initial state may " +
+                "not be undefined."
             );
           }
 
@@ -5533,16 +5533,16 @@
           if (typeof reducer(undefined, { type: type }) === "undefined") {
             throw new Error(
               'Reducer "' +
-              key +
-              '" returned undefined when probed with a random type. ' +
-              ("Don't try to handle " +
-                _createStore__WEBPACK_IMPORTED_MODULE_0__["ActionTypes"]
-                  .INIT +
-                ' or other actions in "redux/*" ') +
-              "namespace. They are considered private. Instead, you must return the " +
-              "current state for any unknown actions, unless it is undefined, " +
-              "in which case you must return the initial state, regardless of the " +
-              "action type. The initial state may not be undefined."
+                key +
+                '" returned undefined when probed with a random type. ' +
+                ("Don't try to handle " +
+                  _createStore__WEBPACK_IMPORTED_MODULE_0__["ActionTypes"]
+                    .INIT +
+                  ' or other actions in "redux/*" ') +
+                "namespace. They are considered private. Instead, you must return the " +
+                "current state for any unknown actions, unless it is undefined, " +
+                "in which case you must return the initial state, regardless of the " +
+                "action type. The initial state may not be undefined."
             );
           }
         });
@@ -5657,7 +5657,7 @@
           // it would pause the execution at this line.
           throw new Error(message);
           /* eslint-disable no-empty */
-        } catch (e) { }
+        } catch (e) {}
         /* eslint-enable no-empty */
       }
 
@@ -5709,9 +5709,9 @@
         if (typeof actionCreators !== "object" || actionCreators === null) {
           throw new Error(
             "bindActionCreators expected an object or a function, instead received " +
-            (actionCreators === null ? "null" : typeof actionCreators) +
-            ". " +
-            'Did you write "import ActionCreators from" instead of "import * as ActionCreators from"?'
+              (actionCreators === null ? "null" : typeof actionCreators) +
+              ". " +
+              'Did you write "import ActionCreators from" instead of "import * as ActionCreators from"?'
           );
         }
 
@@ -6007,10 +6007,10 @@
         if (func != null) {
           try {
             return funcToString.call(func);
-          } catch (e) { }
+          } catch (e) {}
           try {
             return func + "";
-          } catch (e) { }
+          } catch (e) {}
         }
         return "";
       }
@@ -6217,14 +6217,14 @@
       var getSymbols = !nativeGetSymbols
         ? stubArray
         : function (object) {
-          if (object == null) {
-            return [];
-          }
-          object = Object(object);
-          return arrayFilter(nativeGetSymbols(object), function (symbol) {
-            return propertyIsEnumerable.call(object, symbol);
-          });
-        };
+            if (object == null) {
+              return [];
+            }
+            object = Object(object);
+            return arrayFilter(nativeGetSymbols(object), function (symbol) {
+              return propertyIsEnumerable.call(object, symbol);
+            });
+          };
 
       module.exports = getSymbols;
 
@@ -6322,7 +6322,7 @@
     /***/ function (module, exports) {
       module.exports = function (module) {
         if (!module.webpackPolyfill) {
-          module.deprecate = function () { };
+          module.deprecate = function () {};
           module.paths = [];
           // module.parent = undefined by default
           if (!module.children) module.children = [];
@@ -6806,8 +6806,8 @@
 
         return (
           a *
-          Math.pow(2, -10 * pos) *
-          Math.sin(((pos - s) * (2 * Math.PI)) / p) +
+            Math.pow(2, -10 * pos) *
+            Math.sin(((pos - s) * (2 * Math.PI)) / p) +
           1
         );
       }
@@ -6847,9 +6847,9 @@
 
         return (
           a *
-          Math.pow(2, -10 * (pos -= 1)) *
-          Math.sin(((pos - s) * (2 * Math.PI)) / p) *
-          0.5 +
+            Math.pow(2, -10 * (pos -= 1)) *
+            Math.sin(((pos - s) * (2 * Math.PI)) / p) *
+            0.5 +
           1
         );
       }
@@ -7486,7 +7486,7 @@
         if (
           (actionListId &&
             actionTypeId ===
-            _constants.ActionTypeConsts.GENERAL_START_ACTION) ||
+              _constants.ActionTypeConsts.GENERAL_START_ACTION) ||
           isQuickEffect(actionTypeId)
         ) {
           stopActionGroup({
@@ -7941,7 +7941,7 @@
 
           if (
             eventAction.actionTypeId ===
-            _constants.ActionTypeConsts.GENERAL_START_ACTION ||
+              _constants.ActionTypeConsts.GENERAL_START_ACTION ||
             isQuickEffect(eventAction.actionTypeId)
           ) {
             renderInitialGroup({
@@ -8137,12 +8137,12 @@
                 ? void 0
                 : (_itemConfig$target = itemConfig.target) === null ||
                   _itemConfig$target === void 0
-                  ? void 0
-                  : _itemConfig$target.useEventTarget) === true
+                ? void 0
+                : _itemConfig$target.useEventTarget) === true
                 ? {
-                  target: event.target,
-                  targets: event.targets,
-                }
+                    target: event.target,
+                    targets: event.targets,
+                  }
                 : itemConfig;
             var itemElements = getAffectedElements({
               config: config,
@@ -8304,11 +8304,11 @@
           groupIndex === 0 || (groupIndex === 1 && useFirstGroupAsInitialState);
         var instanceDelay =
           isFirstGroup &&
-            isQuickEffect(
-              (_event$action = event.action) === null || _event$action === void 0
-                ? void 0
-                : _event$action.actionTypeId
-            )
+          isQuickEffect(
+            (_event$action = event.action) === null || _event$action === void 0
+              ? void 0
+              : _event$action.actionTypeId
+          )
             ? event.config.delay
             : undefined; // Abort playback if no action items exist at group index
 
@@ -8655,7 +8655,7 @@
           var func = getNative(Object, "defineProperty");
           func({}, "", {});
           return func;
-        } catch (e) { }
+        } catch (e) {}
       })();
 
       module.exports = defineProperty;
@@ -8678,7 +8678,7 @@
        * @returns {Object} Returns the new object.
        */
       var baseCreate = (function () {
-        function object() { }
+        function object() {}
         return function (proto) {
           if (!isObject(proto)) {
             return {};
@@ -8712,8 +8712,8 @@
       var getData = !metaMap
         ? noop
         : function (func) {
-          return metaMap.get(func);
-        };
+            return metaMap.get(func);
+          };
 
       module.exports = getData;
 
@@ -9704,9 +9704,9 @@
       // https://tc39.github.io/ecma262/#sec-object.prototype.propertyisenumerable
       exports.f = NASHORN_BUG
         ? function propertyIsEnumerable(V) {
-          var descriptor = getOwnPropertyDescriptor(this, V);
-          return !!descriptor && descriptor.enumerable;
-        }
+            var descriptor = getOwnPropertyDescriptor(this, V);
+            return !!descriptor && descriptor.enumerable;
+          }
         : nativePropertyIsEnumerable;
 
       /***/
@@ -9725,8 +9725,8 @@
         return !Object("z").propertyIsEnumerable(0);
       })
         ? function (it) {
-          return classof(it) == "String" ? split.call(it, "") : Object(it);
-        }
+            return classof(it) == "String" ? split.call(it, "") : Object(it);
+          }
         : Object;
 
       /***/
@@ -9999,10 +9999,10 @@
         return value == POLYFILL
           ? true
           : value == NATIVE
-            ? false
-            : typeof detection == "function"
-              ? fails(detection)
-              : !!detection;
+          ? false
+          : typeof detection == "function"
+          ? fails(detection)
+          : !!detection;
       };
 
       var normalize = (isForced.normalize = function (string) {
@@ -10148,15 +10148,15 @@
       module.exports = DESCRIPTORS
         ? Object.defineProperties
         : function defineProperties(O, Properties) {
-          anObject(O);
-          var keys = objectKeys(Properties);
-          var length = keys.length;
-          var index = 0;
-          var key;
-          while (length > index)
-            definePropertyModule.f(O, (key = keys[index++]), Properties[key]);
-          return O;
-        };
+            anObject(O);
+            var keys = objectKeys(Properties);
+            var length = keys.length;
+            var index = 0;
+            var key;
+            while (length > index)
+              definePropertyModule.f(O, (key = keys[index++]), Properties[key]);
+            return O;
+          };
 
       /***/
     },
@@ -10277,8 +10277,8 @@
         return symToStringTag && symToStringTag in Object(value)
           ? Object(_getRawTag_js__WEBPACK_IMPORTED_MODULE_1__["default"])(value)
           : Object(_objectToString_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-            value
-          );
+              value
+            );
       }
 
       /* harmony default export */ __webpack_exports__["default"] = baseGetTag;
@@ -10368,7 +10368,7 @@
         try {
           value[symToStringTag] = undefined;
           var unmasked = true;
-        } catch (e) { }
+        } catch (e) {}
 
         var result = nativeObjectToString.call(value);
         if (unmasked) {
@@ -10501,8 +10501,8 @@
       __webpack_require__.r(__webpack_exports__);
       /* WEBPACK VAR INJECTION */ (function (global, module) {
         /* harmony import */ var _ponyfill_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-        167
-      );
+          167
+        );
         /* global window */
 
         var root;
@@ -11053,27 +11053,27 @@
       var stateKeys = Object.create(
         null,
         ((_Object$create = {}),
-          (0, _defineProperty2["default"])(
-            _Object$create,
-            IX2_PREVIEW_REQUESTED,
-            {
-              value: "preview",
-            }
-          ),
-          (0, _defineProperty2["default"])(
-            _Object$create,
-            IX2_PLAYBACK_REQUESTED,
-            {
-              value: "playback",
-            }
-          ),
-          (0, _defineProperty2["default"])(_Object$create, IX2_STOP_REQUESTED, {
-            value: "stop",
-          }),
-          (0, _defineProperty2["default"])(_Object$create, IX2_CLEAR_REQUESTED, {
-            value: "clear",
-          }),
-          _Object$create)
+        (0, _defineProperty2["default"])(
+          _Object$create,
+          IX2_PREVIEW_REQUESTED,
+          {
+            value: "preview",
+          }
+        ),
+        (0, _defineProperty2["default"])(
+          _Object$create,
+          IX2_PLAYBACK_REQUESTED,
+          {
+            value: "playback",
+          }
+        ),
+        (0, _defineProperty2["default"])(_Object$create, IX2_STOP_REQUESTED, {
+          value: "stop",
+        }),
+        (0, _defineProperty2["default"])(_Object$create, IX2_CLEAR_REQUESTED, {
+          value: "clear",
+        }),
+        _Object$create)
       );
 
       var ixRequest = function ixRequest() {
@@ -11331,12 +11331,12 @@
             if (
               !(result === undefined
                 ? baseIsEqual(
-                  srcValue,
-                  objValue,
-                  COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG,
-                  customizer,
-                  stack
-                )
+                    srcValue,
+                    objValue,
+                    COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG,
+                    customizer,
+                    stack
+                  )
                 : result)
             ) {
               return false;
@@ -11633,14 +11633,14 @@
       /** Used to detect if a method is native. */
       var reIsNative = RegExp(
         "^" +
-        funcToString
-          .call(hasOwnProperty)
-          .replace(reRegExpChar, "\\$&")
-          .replace(
-            /hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g,
-            "$1.*?"
-          ) +
-        "$"
+          funcToString
+            .call(hasOwnProperty)
+            .replace(reRegExpChar, "\\$&")
+            .replace(
+              /hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g,
+              "$1.*?"
+            ) +
+          "$"
       );
 
       /**
@@ -11697,7 +11697,7 @@
         try {
           value[symToStringTag] = undefined;
           var unmasked = true;
-        } catch (e) { }
+        } catch (e) {}
 
         var result = nativeObjectToString.call(value);
         if (unmasked) {
@@ -12182,18 +12182,18 @@
           return objIsArr || isTypedArray(object)
             ? equalArrays(object, other, bitmask, customizer, equalFunc, stack)
             : equalByTag(
-              object,
-              other,
-              objTag,
-              bitmask,
-              customizer,
-              equalFunc,
-              stack
-            );
+                object,
+                other,
+                objTag,
+                bitmask,
+                customizer,
+                equalFunc,
+                stack
+              );
         }
         if (!(bitmask & COMPARE_PARTIAL_FLAG)) {
           var objIsWrapped =
-            objIsObj && hasOwnProperty.call(object, "__wrapped__"),
+              objIsObj && hasOwnProperty.call(object, "__wrapped__"),
             othIsWrapped =
               othIsObj && hasOwnProperty.call(other, "__wrapped__");
 
@@ -12618,7 +12618,7 @@
           if (
             !(compared === undefined
               ? objValue === othValue ||
-              equalFunc(objValue, othValue, bitmask, customizer, stack)
+                equalFunc(objValue, othValue, bitmask, customizer, stack)
               : compared)
           ) {
             result = false;
@@ -12814,20 +12814,20 @@
       typedArrayTags[float32Tag] = typedArrayTags[float64Tag] = typedArrayTags[
         int8Tag
       ] = typedArrayTags[int16Tag] = typedArrayTags[int32Tag] = typedArrayTags[
-      uint8Tag
+        uint8Tag
       ] = typedArrayTags[uint8ClampedTag] = typedArrayTags[
-      uint16Tag
+        uint16Tag
       ] = typedArrayTags[uint32Tag] = true;
       typedArrayTags[argsTag] = typedArrayTags[arrayTag] = typedArrayTags[
         arrayBufferTag
       ] = typedArrayTags[boolTag] = typedArrayTags[
-      dataViewTag
+        dataViewTag
       ] = typedArrayTags[dateTag] = typedArrayTags[errorTag] = typedArrayTags[
-      funcTag
+        funcTag
       ] = typedArrayTags[mapTag] = typedArrayTags[numberTag] = typedArrayTags[
-      objectTag
+        objectTag
       ] = typedArrayTags[regexpTag] = typedArrayTags[setTag] = typedArrayTags[
-      stringTag
+        stringTag
       ] = typedArrayTags[weakMapTag] = false;
 
       /**
@@ -12907,7 +12907,7 @@
             return (
               freeProcess && freeProcess.binding && freeProcess.binding("util")
             );
-          } catch (e) { }
+          } catch (e) {}
         })();
 
         module.exports = nodeUtil;
@@ -13024,10 +13024,10 @@
           return objValue === undefined && objValue === srcValue
             ? hasIn(object, path)
             : baseIsEqual(
-              srcValue,
-              objValue,
-              COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG
-            );
+                srcValue,
+                objValue,
+                COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG
+              );
         };
       }
 
@@ -13918,40 +13918,40 @@
 
       var colorStyleProps = Object.freeze(
         ((_Object$freeze = {}),
-          (0, _defineProperty2["default"])(
-            _Object$freeze,
-            STYLE_BACKGROUND_COLOR,
-            BACKGROUND_COLOR
-          ),
-          (0, _defineProperty2["default"])(
-            _Object$freeze,
-            STYLE_BORDER,
-            BORDER_COLOR
-          ),
-          (0, _defineProperty2["default"])(
-            _Object$freeze,
-            STYLE_TEXT_COLOR,
-            COLOR
-          ),
-          _Object$freeze)
+        (0, _defineProperty2["default"])(
+          _Object$freeze,
+          STYLE_BACKGROUND_COLOR,
+          BACKGROUND_COLOR
+        ),
+        (0, _defineProperty2["default"])(
+          _Object$freeze,
+          STYLE_BORDER,
+          BORDER_COLOR
+        ),
+        (0, _defineProperty2["default"])(
+          _Object$freeze,
+          STYLE_TEXT_COLOR,
+          COLOR
+        ),
+        _Object$freeze)
       );
       var willChangeProps = Object.freeze(
         ((_Object$freeze2 = {}),
-          (0, _defineProperty2["default"])(
-            _Object$freeze2,
-            _IX2BrowserSupport.TRANSFORM_PREFIXED,
-            TRANSFORM
-          ),
-          (0, _defineProperty2["default"])(
-            _Object$freeze2,
-            BACKGROUND_COLOR,
-            BACKGROUND
-          ),
-          (0, _defineProperty2["default"])(_Object$freeze2, OPACITY, OPACITY),
-          (0, _defineProperty2["default"])(_Object$freeze2, FILTER, FILTER),
-          (0, _defineProperty2["default"])(_Object$freeze2, WIDTH, WIDTH),
-          (0, _defineProperty2["default"])(_Object$freeze2, HEIGHT, HEIGHT),
-          _Object$freeze2)
+        (0, _defineProperty2["default"])(
+          _Object$freeze2,
+          _IX2BrowserSupport.TRANSFORM_PREFIXED,
+          TRANSFORM
+        ),
+        (0, _defineProperty2["default"])(
+          _Object$freeze2,
+          BACKGROUND_COLOR,
+          BACKGROUND
+        ),
+        (0, _defineProperty2["default"])(_Object$freeze2, OPACITY, OPACITY),
+        (0, _defineProperty2["default"])(_Object$freeze2, FILTER, FILTER),
+        (0, _defineProperty2["default"])(_Object$freeze2, WIDTH, WIDTH),
+        (0, _defineProperty2["default"])(_Object$freeze2, HEIGHT, HEIGHT),
+        _Object$freeze2)
       );
       var objectCache = {};
       var instanceCount = 1;
@@ -13977,9 +13977,9 @@
 
       function reifyState() {
         var _ref2 =
-          arguments.length > 0 && arguments[0] !== undefined
-            ? arguments[0]
-            : {},
+            arguments.length > 0 && arguments[0] !== undefined
+              ? arguments[0]
+              : {},
           events = _ref2.events,
           actionLists = _ref2.actionLists,
           site = _ref2.site;
@@ -14150,12 +14150,12 @@
               ? void 0
               : (_event$action = event.action) === null ||
                 _event$action === void 0
-                ? void 0
-                : (_event$action$config = _event$action.config) === null ||
-                  _event$action$config === void 0
-                  ? void 0
-                  : _event$action$config.affectedElements) !== null &&
-            _ref !== void 0
+              ? void 0
+              : (_event$action$config = _event$action.config) === null ||
+                _event$action$config === void 0
+              ? void 0
+              : _event$action$config.affectedElements) !== null &&
+          _ref !== void 0
             ? _ref
             : {};
         var override = overrides[id || selector] || {};
@@ -14607,42 +14607,42 @@
 
       var transformDefaults =
         ((_transformDefaults = {}),
-          (0, _defineProperty2["default"])(
-            _transformDefaults,
-            TRANSFORM_MOVE,
-            Object.freeze({
-              xValue: 0,
-              yValue: 0,
-              zValue: 0,
-            })
-          ),
-          (0, _defineProperty2["default"])(
-            _transformDefaults,
-            TRANSFORM_SCALE,
-            Object.freeze({
-              xValue: 1,
-              yValue: 1,
-              zValue: 1,
-            })
-          ),
-          (0, _defineProperty2["default"])(
-            _transformDefaults,
-            TRANSFORM_ROTATE,
-            Object.freeze({
-              xValue: 0,
-              yValue: 0,
-              zValue: 0,
-            })
-          ),
-          (0, _defineProperty2["default"])(
-            _transformDefaults,
-            TRANSFORM_SKEW,
-            Object.freeze({
-              xValue: 0,
-              yValue: 0,
-            })
-          ),
-          _transformDefaults);
+        (0, _defineProperty2["default"])(
+          _transformDefaults,
+          TRANSFORM_MOVE,
+          Object.freeze({
+            xValue: 0,
+            yValue: 0,
+            zValue: 0,
+          })
+        ),
+        (0, _defineProperty2["default"])(
+          _transformDefaults,
+          TRANSFORM_SCALE,
+          Object.freeze({
+            xValue: 1,
+            yValue: 1,
+            zValue: 1,
+          })
+        ),
+        (0, _defineProperty2["default"])(
+          _transformDefaults,
+          TRANSFORM_ROTATE,
+          Object.freeze({
+            xValue: 0,
+            yValue: 0,
+            zValue: 0,
+          })
+        ),
+        (0, _defineProperty2["default"])(
+          _transformDefaults,
+          TRANSFORM_SKEW,
+          Object.freeze({
+            xValue: 0,
+            yValue: 0,
+          })
+        ),
+        _transformDefaults);
       var filterDefaults = Object.freeze({
         blur: 0,
         "hue-rotate": 0,
@@ -14899,14 +14899,14 @@
               prop,
               aValue >= 1
                 ? "rgb("
-                  .concat(rValue, ",")
-                  .concat(gValue, ",")
-                  .concat(bValue, ")")
+                    .concat(rValue, ",")
+                    .concat(gValue, ",")
+                    .concat(bValue, ")")
                 : "rgba("
-                  .concat(rValue, ",")
-                  .concat(gValue, ",")
-                  .concat(bValue, ",")
-                  .concat(aValue, ")")
+                    .concat(rValue, ",")
+                    .concat(gValue, ",")
+                    .concat(bValue, ",")
+                    .concat(aValue, ")")
             );
             break;
           }
@@ -15663,8 +15663,8 @@
         return obj && obj.__esModule
           ? obj
           : {
-            default: obj,
-          };
+              default: obj,
+            };
       }
 
       module.exports = _interopRequireDefault;
@@ -16148,8 +16148,8 @@
           arguments.length > 0 && arguments[0] !== undefined
             ? arguments[0]
             : {
-              /*mutable flat state*/
-            };
+                /*mutable flat state*/
+              };
         var action = arguments.length > 1 ? arguments[1] : undefined;
 
         switch (action.type) {
@@ -16651,8 +16651,8 @@
               newValue = isObject(objValue)
                 ? objValue
                 : isIndex(path[index + 1])
-                  ? []
-                  : {};
+                ? []
+                : {};
             }
           }
           assignValue(nested, key, newValue);
@@ -16742,13 +16742,13 @@
       var getSymbolsIn = !nativeGetSymbols
         ? stubArray
         : function (object) {
-          var result = [];
-          while (object) {
-            arrayPush(result, getSymbols(object));
-            object = getPrototype(object);
-          }
-          return result;
-        };
+            var result = [];
+            while (object) {
+              arrayPush(result, getSymbols(object));
+              object = getPrototype(object);
+            }
+            return result;
+          };
 
       module.exports = getSymbolsIn;
 
@@ -17581,32 +17581,32 @@
 
       var getClosestElement = Element.prototype.closest
         ? function (element, selector) {
-          // $FlowIgnore — ELEMENT_MATCHES is the name of the method on the element's prototype depending on browser
-          if (!document.documentElement.contains(element)) {
-            return null;
-          }
-
-          return element.closest(selector);
-        }
-        : function (element, selector) {
-          // $FlowIgnore — if documentElement is null crash
-          if (!document.documentElement.contains(element)) {
-            return null;
-          }
-
-          var el = element;
-
-          do {
-            // $FlowIgnore — if documentElement is null crash
-            if (el[ELEMENT_MATCHES] && el[ELEMENT_MATCHES](selector)) {
-              return el;
+            // $FlowIgnore — ELEMENT_MATCHES is the name of the method on the element's prototype depending on browser
+            if (!document.documentElement.contains(element)) {
+              return null;
             }
 
-            el = el.parentNode;
-          } while (el != null);
+            return element.closest(selector);
+          }
+        : function (element, selector) {
+            // $FlowIgnore — if documentElement is null crash
+            if (!document.documentElement.contains(element)) {
+              return null;
+            }
 
-          return null;
-        };
+            var el = element;
+
+            do {
+              // $FlowIgnore — if documentElement is null crash
+              if (el[ELEMENT_MATCHES] && el[ELEMENT_MATCHES](selector)) {
+                return el;
+              }
+
+              el = el.parentNode;
+            } while (el != null);
+
+            return null;
+          };
       exports.getClosestElement = getClosestElement;
 
       function getRefType(ref) {
@@ -18087,8 +18087,8 @@
             arguments.length > 1 && arguments[1] !== undefined
               ? arguments[1]
               : {
-                clickCount: 0,
-              };
+                  clickCount: 0,
+                };
           var newState = {
             clickCount: (oldState.clickCount % 2) + 1,
           };
@@ -18172,436 +18172,436 @@
 
       var _default =
         ((_default2 = {}),
-          (0, _defineProperty2["default"])(
-            _default2,
-            SLIDER_ACTIVE,
-            getComponentActiveOptions()
-          ),
-          (0, _defineProperty2["default"])(
-            _default2,
-            SLIDER_INACTIVE,
-            getComponentInactiveOptions()
-          ),
-          (0, _defineProperty2["default"])(
-            _default2,
-            DROPDOWN_OPEN,
-            getComponentActiveOptions()
-          ),
-          (0, _defineProperty2["default"])(
-            _default2,
-            DROPDOWN_CLOSE,
-            getComponentInactiveOptions()
-          ),
-          (0, _defineProperty2["default"])(
-            _default2,
-            NAVBAR_OPEN,
-            getComponentActiveOptions(false)
-          ),
-          (0, _defineProperty2["default"])(
-            _default2,
-            NAVBAR_CLOSE,
-            getComponentInactiveOptions(false)
-          ),
-          (0, _defineProperty2["default"])(
-            _default2,
-            TAB_ACTIVE,
-            getComponentActiveOptions()
-          ),
-          (0, _defineProperty2["default"])(
-            _default2,
-            TAB_INACTIVE,
-            getComponentInactiveOptions()
-          ),
-          (0, _defineProperty2["default"])(_default2, ECOMMERCE_CART_OPEN, {
-            types: "ecommerce-cart-open",
-            handler: withFilter(isOrContainsElement, actionGroupCreator),
-          }),
-          (0, _defineProperty2["default"])(_default2, ECOMMERCE_CART_CLOSE, {
-            types: "ecommerce-cart-close",
-            handler: withFilter(isOrContainsElement, actionGroupCreator),
-          }),
-          (0, _defineProperty2["default"])(_default2, MOUSE_CLICK, {
-            types: "click",
-            handler: withFilter(
-              isOrContainsElement,
-              whenClickCountChange(function (options, _ref6) {
-                var clickCount = _ref6.clickCount;
+        (0, _defineProperty2["default"])(
+          _default2,
+          SLIDER_ACTIVE,
+          getComponentActiveOptions()
+        ),
+        (0, _defineProperty2["default"])(
+          _default2,
+          SLIDER_INACTIVE,
+          getComponentInactiveOptions()
+        ),
+        (0, _defineProperty2["default"])(
+          _default2,
+          DROPDOWN_OPEN,
+          getComponentActiveOptions()
+        ),
+        (0, _defineProperty2["default"])(
+          _default2,
+          DROPDOWN_CLOSE,
+          getComponentInactiveOptions()
+        ),
+        (0, _defineProperty2["default"])(
+          _default2,
+          NAVBAR_OPEN,
+          getComponentActiveOptions(false)
+        ),
+        (0, _defineProperty2["default"])(
+          _default2,
+          NAVBAR_CLOSE,
+          getComponentInactiveOptions(false)
+        ),
+        (0, _defineProperty2["default"])(
+          _default2,
+          TAB_ACTIVE,
+          getComponentActiveOptions()
+        ),
+        (0, _defineProperty2["default"])(
+          _default2,
+          TAB_INACTIVE,
+          getComponentInactiveOptions()
+        ),
+        (0, _defineProperty2["default"])(_default2, ECOMMERCE_CART_OPEN, {
+          types: "ecommerce-cart-open",
+          handler: withFilter(isOrContainsElement, actionGroupCreator),
+        }),
+        (0, _defineProperty2["default"])(_default2, ECOMMERCE_CART_CLOSE, {
+          types: "ecommerce-cart-close",
+          handler: withFilter(isOrContainsElement, actionGroupCreator),
+        }),
+        (0, _defineProperty2["default"])(_default2, MOUSE_CLICK, {
+          types: "click",
+          handler: withFilter(
+            isOrContainsElement,
+            whenClickCountChange(function (options, _ref6) {
+              var clickCount = _ref6.clickCount;
 
-                if (hasAutoStopEvent(options)) {
-                  clickCount === 1 && actionGroupCreator(options);
-                } else {
-                  actionGroupCreator(options);
-                }
-              })
-            ),
-          }),
-          (0, _defineProperty2["default"])(_default2, MOUSE_SECOND_CLICK, {
-            types: "click",
-            handler: withFilter(
-              isOrContainsElement,
-              whenClickCountChange(function (options, _ref7) {
-                var clickCount = _ref7.clickCount;
-
-                if (clickCount === 2) {
-                  actionGroupCreator(options);
-                }
-              })
-            ),
-          }),
-          (0, _defineProperty2["default"])(
-            _default2,
-            MOUSE_DOWN,
-            (0, _extends2["default"])({}, baseActionGroupOptions, {
-              types: "mousedown",
+              if (hasAutoStopEvent(options)) {
+                clickCount === 1 && actionGroupCreator(options);
+              } else {
+                actionGroupCreator(options);
+              }
             })
           ),
-          (0, _defineProperty2["default"])(
-            _default2,
-            MOUSE_UP,
-            (0, _extends2["default"])({}, baseActionGroupOptions, {
-              types: "mouseup",
+        }),
+        (0, _defineProperty2["default"])(_default2, MOUSE_SECOND_CLICK, {
+          types: "click",
+          handler: withFilter(
+            isOrContainsElement,
+            whenClickCountChange(function (options, _ref7) {
+              var clickCount = _ref7.clickCount;
+
+              if (clickCount === 2) {
+                actionGroupCreator(options);
+              }
             })
           ),
-          (0, _defineProperty2["default"])(_default2, MOUSE_OVER, {
-            types: MOUSE_OVER_OUT_TYPES,
-            handler: withFilter(
-              isOrContainsElement,
-              whenElementHoverChange(function (options, state) {
-                if (state.elementHovered) {
-                  actionGroupCreator(options);
-                }
-              })
-            ),
-          }),
-          (0, _defineProperty2["default"])(_default2, MOUSE_OUT, {
-            types: MOUSE_OVER_OUT_TYPES,
-            handler: withFilter(
-              isOrContainsElement,
-              whenElementHoverChange(function (options, state) {
-                if (!state.elementHovered) {
-                  actionGroupCreator(options);
-                }
-              })
-            ),
-          }),
-          (0, _defineProperty2["default"])(_default2, MOUSE_MOVE, {
-            types: "mousemove mouseout scroll",
-            handler: function handler(_ref8) {
-              // $FlowFixMe
-              var store = _ref8.store,
-                element = _ref8.element,
-                eventConfig = _ref8.eventConfig,
-                nativeEvent = _ref8.nativeEvent,
-                eventStateKey = _ref8.eventStateKey;
-              var state =
-                arguments.length > 1 && arguments[1] !== undefined
-                  ? arguments[1]
-                  : {
+        }),
+        (0, _defineProperty2["default"])(
+          _default2,
+          MOUSE_DOWN,
+          (0, _extends2["default"])({}, baseActionGroupOptions, {
+            types: "mousedown",
+          })
+        ),
+        (0, _defineProperty2["default"])(
+          _default2,
+          MOUSE_UP,
+          (0, _extends2["default"])({}, baseActionGroupOptions, {
+            types: "mouseup",
+          })
+        ),
+        (0, _defineProperty2["default"])(_default2, MOUSE_OVER, {
+          types: MOUSE_OVER_OUT_TYPES,
+          handler: withFilter(
+            isOrContainsElement,
+            whenElementHoverChange(function (options, state) {
+              if (state.elementHovered) {
+                actionGroupCreator(options);
+              }
+            })
+          ),
+        }),
+        (0, _defineProperty2["default"])(_default2, MOUSE_OUT, {
+          types: MOUSE_OVER_OUT_TYPES,
+          handler: withFilter(
+            isOrContainsElement,
+            whenElementHoverChange(function (options, state) {
+              if (!state.elementHovered) {
+                actionGroupCreator(options);
+              }
+            })
+          ),
+        }),
+        (0, _defineProperty2["default"])(_default2, MOUSE_MOVE, {
+          types: "mousemove mouseout scroll",
+          handler: function handler(_ref8) {
+            // $FlowFixMe
+            var store = _ref8.store,
+              element = _ref8.element,
+              eventConfig = _ref8.eventConfig,
+              nativeEvent = _ref8.nativeEvent,
+              eventStateKey = _ref8.eventStateKey;
+            var state =
+              arguments.length > 1 && arguments[1] !== undefined
+                ? arguments[1]
+                : {
                     clientX: 0,
                     clientY: 0,
                     pageX: 0,
                     pageY: 0,
                   };
-              var basedOn = eventConfig.basedOn,
-                selectedAxis = eventConfig.selectedAxis,
-                continuousParameterGroupId =
-                  eventConfig.continuousParameterGroupId,
-                reverse = eventConfig.reverse,
-                _eventConfig$restingS = eventConfig.restingState,
-                restingState =
-                  _eventConfig$restingS === void 0 ? 0 : _eventConfig$restingS;
-              var _nativeEvent$clientX = nativeEvent.clientX,
-                clientX =
-                  _nativeEvent$clientX === void 0
-                    ? state.clientX
-                    : _nativeEvent$clientX,
-                _nativeEvent$clientY = nativeEvent.clientY,
-                clientY =
-                  _nativeEvent$clientY === void 0
-                    ? state.clientY
-                    : _nativeEvent$clientY,
-                _nativeEvent$pageX = nativeEvent.pageX,
-                pageX =
-                  _nativeEvent$pageX === void 0
-                    ? state.pageX
-                    : _nativeEvent$pageX,
-                _nativeEvent$pageY = nativeEvent.pageY,
-                pageY =
-                  _nativeEvent$pageY === void 0
-                    ? state.pageY
-                    : _nativeEvent$pageY;
-              var isXAxis = selectedAxis === "X_AXIS";
-              var isMouseOut = nativeEvent.type === "mouseout";
-              var value = restingState / 100;
-              var namespacedParameterId = continuousParameterGroupId;
-              var elementHovered = false;
+            var basedOn = eventConfig.basedOn,
+              selectedAxis = eventConfig.selectedAxis,
+              continuousParameterGroupId =
+                eventConfig.continuousParameterGroupId,
+              reverse = eventConfig.reverse,
+              _eventConfig$restingS = eventConfig.restingState,
+              restingState =
+                _eventConfig$restingS === void 0 ? 0 : _eventConfig$restingS;
+            var _nativeEvent$clientX = nativeEvent.clientX,
+              clientX =
+                _nativeEvent$clientX === void 0
+                  ? state.clientX
+                  : _nativeEvent$clientX,
+              _nativeEvent$clientY = nativeEvent.clientY,
+              clientY =
+                _nativeEvent$clientY === void 0
+                  ? state.clientY
+                  : _nativeEvent$clientY,
+              _nativeEvent$pageX = nativeEvent.pageX,
+              pageX =
+                _nativeEvent$pageX === void 0
+                  ? state.pageX
+                  : _nativeEvent$pageX,
+              _nativeEvent$pageY = nativeEvent.pageY,
+              pageY =
+                _nativeEvent$pageY === void 0
+                  ? state.pageY
+                  : _nativeEvent$pageY;
+            var isXAxis = selectedAxis === "X_AXIS";
+            var isMouseOut = nativeEvent.type === "mouseout";
+            var value = restingState / 100;
+            var namespacedParameterId = continuousParameterGroupId;
+            var elementHovered = false;
 
-              switch (basedOn) {
-                case _constants.EventBasedOn.VIEWPORT: {
-                  value = isXAxis
-                    ? Math.min(clientX, window.innerWidth) / window.innerWidth
-                    : Math.min(clientY, window.innerHeight) / window.innerHeight;
+            switch (basedOn) {
+              case _constants.EventBasedOn.VIEWPORT: {
+                value = isXAxis
+                  ? Math.min(clientX, window.innerWidth) / window.innerWidth
+                  : Math.min(clientY, window.innerHeight) / window.innerHeight;
+                break;
+              }
+
+              case _constants.EventBasedOn.PAGE: {
+                var _getDocumentState3 = getDocumentState(),
+                  scrollLeft = _getDocumentState3.scrollLeft,
+                  scrollTop = _getDocumentState3.scrollTop,
+                  scrollWidth = _getDocumentState3.scrollWidth,
+                  scrollHeight = _getDocumentState3.scrollHeight;
+
+                value = isXAxis
+                  ? Math.min(scrollLeft + pageX, scrollWidth) / scrollWidth
+                  : Math.min(scrollTop + pageY, scrollHeight) / scrollHeight;
+                break;
+              }
+
+              case _constants.EventBasedOn.ELEMENT:
+              default: {
+                namespacedParameterId = getNamespacedParameterId(
+                  eventStateKey,
+                  continuousParameterGroupId
+                );
+                var isMouseEvent = nativeEvent.type.indexOf("mouse") === 0; // Use isOrContainsElement for mouse events since they are fired from the target
+
+                if (
+                  isMouseEvent &&
+                  isOrContainsElement({
+                    element: element,
+                    nativeEvent: nativeEvent,
+                  }) !== true
+                ) {
                   break;
                 }
 
-                case _constants.EventBasedOn.PAGE: {
-                  var _getDocumentState3 = getDocumentState(),
-                    scrollLeft = _getDocumentState3.scrollLeft,
-                    scrollTop = _getDocumentState3.scrollTop,
-                    scrollWidth = _getDocumentState3.scrollWidth,
-                    scrollHeight = _getDocumentState3.scrollHeight;
+                var rect = element.getBoundingClientRect();
+                var left = rect.left,
+                  top = rect.top,
+                  width = rect.width,
+                  height = rect.height; // Otherwise we'll need to calculate the mouse position from the previous handler state
+                // against the target element's rect
 
-                  value = isXAxis
-                    ? Math.min(scrollLeft + pageX, scrollWidth) / scrollWidth
-                    : Math.min(scrollTop + pageY, scrollHeight) / scrollHeight;
+                if (
+                  !isMouseEvent &&
+                  !pointIntersects(
+                    {
+                      left: clientX,
+                      top: clientY,
+                    },
+                    rect
+                  )
+                ) {
                   break;
                 }
 
-                case _constants.EventBasedOn.ELEMENT:
-                default: {
-                  namespacedParameterId = getNamespacedParameterId(
-                    eventStateKey,
-                    continuousParameterGroupId
-                  );
-                  var isMouseEvent = nativeEvent.type.indexOf("mouse") === 0; // Use isOrContainsElement for mouse events since they are fired from the target
+                elementHovered = true;
+                value = isXAxis
+                  ? (clientX - left) / width
+                  : (clientY - top) / height;
+                break;
+              }
+            } // cover case where the event is a mouse out, but the value is not quite at 100%
 
-                  if (
-                    isMouseEvent &&
-                    isOrContainsElement({
-                      element: element,
-                      nativeEvent: nativeEvent,
-                    }) !== true
-                  ) {
-                    break;
-                  }
+            if (
+              isMouseOut &&
+              (value > 1 - MOUSE_OUT_ROUND_THRESHOLD ||
+                value < MOUSE_OUT_ROUND_THRESHOLD)
+            ) {
+              value = Math.round(value);
+            } // Only update based on element if the mouse is moving over or has just left the element
 
-                  var rect = element.getBoundingClientRect();
-                  var left = rect.left,
-                    top = rect.top,
-                    width = rect.width,
-                    height = rect.height; // Otherwise we'll need to calculate the mouse position from the previous handler state
-                  // against the target element's rect
+            if (
+              basedOn !== _constants.EventBasedOn.ELEMENT ||
+              elementHovered || // $FlowFixMe
+              elementHovered !== state.elementHovered
+            ) {
+              value = reverse ? 1 - value : value;
+              store.dispatch(
+                (0, _IX2EngineActions.parameterChanged)(
+                  namespacedParameterId,
+                  value
+                )
+              );
+            }
 
-                  if (
-                    !isMouseEvent &&
-                    !pointIntersects(
-                      {
-                        left: clientX,
-                        top: clientY,
-                      },
-                      rect
-                    )
-                  ) {
-                    break;
-                  }
+            return {
+              elementHovered: elementHovered,
+              clientX: clientX,
+              clientY: clientY,
+              pageX: pageX,
+              pageY: pageY,
+            };
+          },
+        }),
+        (0, _defineProperty2["default"])(_default2, PAGE_SCROLL, {
+          types: SCROLL_EVENT_TYPES,
+          // $FlowFixMe
+          handler: function handler(_ref9) {
+            var store = _ref9.store,
+              eventConfig = _ref9.eventConfig;
+            var continuousParameterGroupId =
+                eventConfig.continuousParameterGroupId,
+              reverse = eventConfig.reverse;
 
-                  elementHovered = true;
-                  value = isXAxis
-                    ? (clientX - left) / width
-                    : (clientY - top) / height;
-                  break;
-                }
-              } // cover case where the event is a mouse out, but the value is not quite at 100%
+            var _getDocumentState4 = getDocumentState(),
+              scrollTop = _getDocumentState4.scrollTop,
+              scrollHeight = _getDocumentState4.scrollHeight,
+              clientHeight = _getDocumentState4.clientHeight;
 
-              if (
-                isMouseOut &&
-                (value > 1 - MOUSE_OUT_ROUND_THRESHOLD ||
-                  value < MOUSE_OUT_ROUND_THRESHOLD)
-              ) {
-                value = Math.round(value);
-              } // Only update based on element if the mouse is moving over or has just left the element
+            var value = scrollTop / (scrollHeight - clientHeight);
+            value = reverse ? 1 - value : value;
+            store.dispatch(
+              (0, _IX2EngineActions.parameterChanged)(
+                continuousParameterGroupId,
+                value
+              )
+            );
+          },
+        }),
+        (0, _defineProperty2["default"])(_default2, SCROLLING_IN_VIEW, {
+          types: SCROLL_EVENT_TYPES,
+          handler: function handler(_ref10) {
+            // $FlowFixMe
+            var element = _ref10.element,
+              store = _ref10.store,
+              eventConfig = _ref10.eventConfig,
+              eventStateKey = _ref10.eventStateKey;
+            var state =
+              arguments.length > 1 && arguments[1] !== undefined
+                ? arguments[1]
+                : {
+                    scrollPercent: 0,
+                  };
 
-              if (
-                basedOn !== _constants.EventBasedOn.ELEMENT ||
-                elementHovered || // $FlowFixMe
-                elementHovered !== state.elementHovered
-              ) {
-                value = reverse ? 1 - value : value;
+            var _getDocumentState5 = getDocumentState(),
+              scrollLeft = _getDocumentState5.scrollLeft,
+              scrollTop = _getDocumentState5.scrollTop,
+              scrollWidth = _getDocumentState5.scrollWidth,
+              scrollHeight = _getDocumentState5.scrollHeight,
+              visibleHeight = _getDocumentState5.clientHeight;
+
+            var basedOn = eventConfig.basedOn,
+              selectedAxis = eventConfig.selectedAxis,
+              continuousParameterGroupId =
+                eventConfig.continuousParameterGroupId,
+              startsEntering = eventConfig.startsEntering,
+              startsExiting = eventConfig.startsExiting,
+              addEndOffset = eventConfig.addEndOffset,
+              addStartOffset = eventConfig.addStartOffset,
+              _eventConfig$addOffse = eventConfig.addOffsetValue,
+              addOffsetValue =
+                _eventConfig$addOffse === void 0 ? 0 : _eventConfig$addOffse,
+              _eventConfig$endOffse = eventConfig.endOffsetValue,
+              endOffsetValue =
+                _eventConfig$endOffse === void 0 ? 0 : _eventConfig$endOffse;
+            var isXAxis = selectedAxis === "X_AXIS";
+
+            if (basedOn === _constants.EventBasedOn.VIEWPORT) {
+              var value = isXAxis
+                ? scrollLeft / scrollWidth
+                : scrollTop / scrollHeight;
+
+              if (value !== state.scrollPercent) {
                 store.dispatch(
                   (0, _IX2EngineActions.parameterChanged)(
-                    namespacedParameterId,
+                    continuousParameterGroupId,
                     value
                   )
                 );
               }
 
               return {
-                elementHovered: elementHovered,
-                clientX: clientX,
-                clientY: clientY,
-                pageX: pageX,
-                pageY: pageY,
+                scrollPercent: value,
               };
-            },
-          }),
-          (0, _defineProperty2["default"])(_default2, PAGE_SCROLL, {
-            types: SCROLL_EVENT_TYPES,
-            // $FlowFixMe
-            handler: function handler(_ref9) {
-              var store = _ref9.store,
-                eventConfig = _ref9.eventConfig;
-              var continuousParameterGroupId =
-                eventConfig.continuousParameterGroupId,
-                reverse = eventConfig.reverse;
-
-              var _getDocumentState4 = getDocumentState(),
-                scrollTop = _getDocumentState4.scrollTop,
-                scrollHeight = _getDocumentState4.scrollHeight,
-                clientHeight = _getDocumentState4.clientHeight;
-
-              var value = scrollTop / (scrollHeight - clientHeight);
-              value = reverse ? 1 - value : value;
-              store.dispatch(
-                (0, _IX2EngineActions.parameterChanged)(
-                  continuousParameterGroupId,
-                  value
-                )
+            } else {
+              var namespacedParameterId = getNamespacedParameterId(
+                eventStateKey,
+                continuousParameterGroupId
               );
-            },
-          }),
-          (0, _defineProperty2["default"])(_default2, SCROLLING_IN_VIEW, {
-            types: SCROLL_EVENT_TYPES,
-            handler: function handler(_ref10) {
-              // $FlowFixMe
-              var element = _ref10.element,
-                store = _ref10.store,
-                eventConfig = _ref10.eventConfig,
-                eventStateKey = _ref10.eventStateKey;
-              var state =
-                arguments.length > 1 && arguments[1] !== undefined
-                  ? arguments[1]
-                  : {
-                    scrollPercent: 0,
-                  };
+              var elementRect = element.getBoundingClientRect();
+              var offsetStartPerc = (addStartOffset ? addOffsetValue : 0) / 100;
+              var offsetEndPerc = (addEndOffset ? endOffsetValue : 0) / 100; // flip the offset percentages depending on start / exit type
 
-              var _getDocumentState5 = getDocumentState(),
-                scrollLeft = _getDocumentState5.scrollLeft,
-                scrollTop = _getDocumentState5.scrollTop,
-                scrollWidth = _getDocumentState5.scrollWidth,
-                scrollHeight = _getDocumentState5.scrollHeight,
-                visibleHeight = _getDocumentState5.clientHeight;
+              offsetStartPerc = startsEntering
+                ? offsetStartPerc
+                : 1 - offsetStartPerc;
+              offsetEndPerc = startsExiting ? offsetEndPerc : 1 - offsetEndPerc;
+              var offsetElementTop =
+                elementRect.top +
+                Math.min(elementRect.height * offsetStartPerc, visibleHeight);
+              var offsetElementBottom =
+                elementRect.top + elementRect.height * offsetEndPerc;
+              var offsetHeight = offsetElementBottom - offsetElementTop;
+              var fixedScrollHeight = Math.min(
+                visibleHeight + offsetHeight,
+                scrollHeight
+              );
+              var fixedScrollTop = Math.min(
+                Math.max(0, visibleHeight - offsetElementTop),
+                fixedScrollHeight
+              );
+              var fixedScrollPerc = fixedScrollTop / fixedScrollHeight;
 
-              var basedOn = eventConfig.basedOn,
-                selectedAxis = eventConfig.selectedAxis,
-                continuousParameterGroupId =
-                  eventConfig.continuousParameterGroupId,
-                startsEntering = eventConfig.startsEntering,
-                startsExiting = eventConfig.startsExiting,
-                addEndOffset = eventConfig.addEndOffset,
-                addStartOffset = eventConfig.addStartOffset,
-                _eventConfig$addOffse = eventConfig.addOffsetValue,
-                addOffsetValue =
-                  _eventConfig$addOffse === void 0 ? 0 : _eventConfig$addOffse,
-                _eventConfig$endOffse = eventConfig.endOffsetValue,
-                endOffsetValue =
-                  _eventConfig$endOffse === void 0 ? 0 : _eventConfig$endOffse;
-              var isXAxis = selectedAxis === "X_AXIS";
-
-              if (basedOn === _constants.EventBasedOn.VIEWPORT) {
-                var value = isXAxis
-                  ? scrollLeft / scrollWidth
-                  : scrollTop / scrollHeight;
-
-                if (value !== state.scrollPercent) {
-                  store.dispatch(
-                    (0, _IX2EngineActions.parameterChanged)(
-                      continuousParameterGroupId,
-                      value
-                    )
-                  );
-                }
-
-                return {
-                  scrollPercent: value,
-                };
-              } else {
-                var namespacedParameterId = getNamespacedParameterId(
-                  eventStateKey,
-                  continuousParameterGroupId
+              if (fixedScrollPerc !== state.scrollPercent) {
+                store.dispatch(
+                  (0, _IX2EngineActions.parameterChanged)(
+                    namespacedParameterId,
+                    fixedScrollPerc
+                  )
                 );
-                var elementRect = element.getBoundingClientRect();
-                var offsetStartPerc = (addStartOffset ? addOffsetValue : 0) / 100;
-                var offsetEndPerc = (addEndOffset ? endOffsetValue : 0) / 100; // flip the offset percentages depending on start / exit type
-
-                offsetStartPerc = startsEntering
-                  ? offsetStartPerc
-                  : 1 - offsetStartPerc;
-                offsetEndPerc = startsExiting ? offsetEndPerc : 1 - offsetEndPerc;
-                var offsetElementTop =
-                  elementRect.top +
-                  Math.min(elementRect.height * offsetStartPerc, visibleHeight);
-                var offsetElementBottom =
-                  elementRect.top + elementRect.height * offsetEndPerc;
-                var offsetHeight = offsetElementBottom - offsetElementTop;
-                var fixedScrollHeight = Math.min(
-                  visibleHeight + offsetHeight,
-                  scrollHeight
-                );
-                var fixedScrollTop = Math.min(
-                  Math.max(0, visibleHeight - offsetElementTop),
-                  fixedScrollHeight
-                );
-                var fixedScrollPerc = fixedScrollTop / fixedScrollHeight;
-
-                if (fixedScrollPerc !== state.scrollPercent) {
-                  store.dispatch(
-                    (0, _IX2EngineActions.parameterChanged)(
-                      namespacedParameterId,
-                      fixedScrollPerc
-                    )
-                  );
-                }
-
-                return {
-                  scrollPercent: fixedScrollPerc,
-                };
               }
-            },
-          }),
-          (0, _defineProperty2["default"])(
-            _default2,
-            SCROLL_INTO_VIEW,
-            scrollIntoOutOfViewOptions
+
+              return {
+                scrollPercent: fixedScrollPerc,
+              };
+            }
+          },
+        }),
+        (0, _defineProperty2["default"])(
+          _default2,
+          SCROLL_INTO_VIEW,
+          scrollIntoOutOfViewOptions
+        ),
+        (0, _defineProperty2["default"])(
+          _default2,
+          SCROLL_OUT_OF_VIEW,
+          scrollIntoOutOfViewOptions
+        ),
+        (0, _defineProperty2["default"])(
+          _default2,
+          PAGE_SCROLL_DOWN,
+          (0, _extends2["default"])({}, baseScrollActionGroupOptions, {
+            handler: whenScrollDirectionChange(function (options, state) {
+              if (state.scrollingDown) {
+                actionGroupCreator(options);
+              }
+            }),
+          })
+        ),
+        (0, _defineProperty2["default"])(
+          _default2,
+          PAGE_SCROLL_UP,
+          (0, _extends2["default"])({}, baseScrollActionGroupOptions, {
+            handler: whenScrollDirectionChange(function (options, state) {
+              if (!state.scrollingDown) {
+                actionGroupCreator(options);
+              }
+            }),
+          })
+        ),
+        (0, _defineProperty2["default"])(_default2, PAGE_FINISH, {
+          types: "readystatechange IX2_PAGE_UPDATE",
+          handler: withFilter(
+            isElement,
+            whenPageLoadFinish(actionGroupCreator)
           ),
-          (0, _defineProperty2["default"])(
-            _default2,
-            SCROLL_OUT_OF_VIEW,
-            scrollIntoOutOfViewOptions
-          ),
-          (0, _defineProperty2["default"])(
-            _default2,
-            PAGE_SCROLL_DOWN,
-            (0, _extends2["default"])({}, baseScrollActionGroupOptions, {
-              handler: whenScrollDirectionChange(function (options, state) {
-                if (state.scrollingDown) {
-                  actionGroupCreator(options);
-                }
-              }),
-            })
-          ),
-          (0, _defineProperty2["default"])(
-            _default2,
-            PAGE_SCROLL_UP,
-            (0, _extends2["default"])({}, baseScrollActionGroupOptions, {
-              handler: whenScrollDirectionChange(function (options, state) {
-                if (!state.scrollingDown) {
-                  actionGroupCreator(options);
-                }
-              }),
-            })
-          ),
-          (0, _defineProperty2["default"])(_default2, PAGE_FINISH, {
-            types: "readystatechange IX2_PAGE_UPDATE",
-            handler: withFilter(
-              isElement,
-              whenPageLoadFinish(actionGroupCreator)
-            ),
-          }),
-          (0, _defineProperty2["default"])(_default2, PAGE_START, {
-            types: "readystatechange IX2_PAGE_UPDATE",
-            handler: withFilter(isElement, whenPageLoadStart(actionGroupCreator)),
-          }),
-          _default2);
+        }),
+        (0, _defineProperty2["default"])(_default2, PAGE_START, {
+          types: "readystatechange IX2_PAGE_UPDATE",
+          handler: withFilter(isElement, whenPageLoadStart(actionGroupCreator)),
+        }),
+        _default2);
 
       exports["default"] = _default;
 
@@ -18693,10 +18693,10 @@
               data &&
               isLaziable(data[0]) &&
               data[1] ==
-              (WRAP_ARY_FLAG |
-                WRAP_CURRY_FLAG |
-                WRAP_PARTIAL_FLAG |
-                WRAP_REARG_FLAG) &&
+                (WRAP_ARY_FLAG |
+                  WRAP_CURRY_FLAG |
+                  WRAP_PARTIAL_FLAG |
+                  WRAP_REARG_FLAG) &&
               !data[4].length &&
               data[9] == 1
             ) {
@@ -18956,13 +18956,13 @@
       var baseSetToString = !defineProperty
         ? identity
         : function (func, string) {
-          return defineProperty(func, "toString", {
-            configurable: true,
-            enumerable: false,
-            value: constant(string),
-            writable: true,
-          });
-        };
+            return defineProperty(func, "toString", {
+              configurable: true,
+              enumerable: false,
+              value: constant(string),
+              writable: true,
+            });
+          };
 
       module.exports = baseSetToString;
 
@@ -19467,7 +19467,7 @@
             if (
               tempLink.hash.length > 1 &&
               tempLink.host + tempLink.pathname ===
-              location.host + location.pathname
+                location.host + location.pathname
             ) {
               // Ignore any hrefs with Google Translate type hash
               // Example: jQuery can't parse $('#googtrans(en|es)')
@@ -20082,9 +20082,9 @@
             $doc.on(
               "change",
               namespace +
-              ' form input[type="checkbox"]:not(' +
-              CHECKBOX_CLASS_NAME +
-              ")",
+                ' form input[type="checkbox"]:not(' +
+                CHECKBOX_CLASS_NAME +
+                ")",
               function (evt) {
                 $(evt.target)
                   .siblings(CHECKBOX_CLASS_NAME)
@@ -20121,9 +20121,9 @@
               $doc.on(
                 "focus",
                 namespace +
-                ' form input[type="'.concat(controlType, '"]:not(') +
-                customControlClassName +
-                ")",
+                  ' form input[type="'.concat(controlType, '"]:not(') +
+                  customControlClassName +
+                  ")",
                 function (evt) {
                   $(evt.target)
                     .siblings(customControlClassName)
@@ -20133,9 +20133,9 @@
               $doc.on(
                 "blur",
                 namespace +
-                ' form input[type="'.concat(controlType, '"]:not(') +
-                customControlClassName +
-                ")",
+                  ' form input[type="'.concat(controlType, '"]:not(') +
+                  customControlClassName +
+                  ")",
                 function (evt) {
                   $(evt.target)
                     .siblings(customControlClassName)
@@ -23526,9 +23526,9 @@ Webflow.require("ix2").init({
                       selectorGuids: ["de171c97-f145-edd8-52d8-14d98522e41b"],
                     },
                     globalSwatchId: "",
-                    rValue: 22,
-                    bValue: 88,
-                    gValue: 12,
+                    rValue: 45,
+                    bValue: 60,
+                    gValue: 67,
                     aValue: 0,
                   },
                 },
@@ -23549,9 +23549,9 @@ Webflow.require("ix2").init({
                       selectorGuids: ["de171c97-f145-edd8-52d8-14d98522e41b"],
                     },
                     globalSwatchId: "",
-                    rValue: 35,
-                    bValue: 228,
-                    gValue: 126,
+                    rValue: 45,
+                    bValue: 60,
+                    gValue: 67,
                     aValue: 1,
                   },
                 },
