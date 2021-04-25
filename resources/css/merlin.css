@@ -2037,7 +2037,7 @@ a {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: rgb(88, 90, 105);
+  background: #2d433c;
 }
 
 .section.tokenomics {
@@ -3914,17 +3914,17 @@ a {
 
 .section-3.tokenomics {
   position: relative;
-  background-color: #1b0400;
+  background-color: #f0b49d;
 }
 
 .section-3.timeline {
   padding-bottom: 0px;
-  background-color: rgb(88, 90, 105);
+  background-color: #2d433c;
 }
 
 .section-3.tokenomics {
   position: relative;
-  background-color: rgb(35, 126, 228);
+  background-color: #f0b49d;
 }
 
 .card-2 {
@@ -4002,7 +4002,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   border-top: 1px solid rgba(66, 232, 224, 0.1);
-  background-color: rgb(88, 90, 105);
+  background-color: #2d433c;
 }
 
 .footer_section-2 {
@@ -4026,7 +4026,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   border-top: 1px solid rgba(47, 48, 51, 0.06);
-  background-color: rgb(88, 90, 105);
+  background-color: #2d433c;
   color: #fff;
 }
 
