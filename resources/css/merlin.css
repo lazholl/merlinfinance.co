@@ -2793,9 +2793,9 @@ a {
   -ms-flex-align: center;
   align-items: center;
   border-style: solid;
-  border-width: 0px;
+  border-width: 2px;
   border-color: white;
-  border-radius: 2px;
+  border-radius: 1px;
 }
 
 .icon-bg-gradient {
@@ -3725,7 +3725,7 @@ a {
 .tab-2.w--current {
   border-style: solid;
   border-width: 0px;
-  border-color: rgba(1, 56, 236, 0.27);
+  border-color: white;
   border-radius: 0px;
   background-color: #1c2b27;
   color: #fff;
