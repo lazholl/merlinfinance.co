@@ -3595,8 +3595,6 @@ a {
 
 .button-2 {
   width: 250px;
-  margin-top: 13px;
-  margin-right: 25px;
   padding: 15px 35px;
   border-radius: 20px;
   background-color: rgb(35, 126, 228);
@@ -3678,7 +3676,6 @@ a {
 .button-3 {
   width: 250px;
   margin-top: 13px;
-  margin-right: 26px;
   margin-bottom: 0px;
   padding: 15px 35px;
   border-style: solid;
